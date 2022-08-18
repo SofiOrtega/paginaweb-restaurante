@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&family=Playfair+Display:ital,wght@0,700;1,600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    font-size: 15px;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+/*HEADER*/
+
+.header{
+    width: 100vw;
+    height: 50px;
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1, .background-texts h2{
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+}
+
+h1{
+    color: rgb(165, 29, 29);
+    text-transform: capitalize;
+    font-size: 3.5rem;
+    padding-bottom: 10px;
+    text-shadow: 3px 2px 0px #FFFFFF;
+    
+}
+
+
+.background-texts a{
+    color: #fff;
+    position: relative;
+    top: 24px;
+    padding: 10px;
+    background-color: rgb(165, 29, 29);
+    border: 2px solid #fff;
+    box-shadow: -6px 5px 17px 0px rgba(0,0,0,0.48);
+}
+
+
+.header a{
+    color: #000;
+}
+
+/*MAIN*/
+
+.contenido-principal{
+    position: relative;
+}
+
+.seccion-background{
+    position: relative;
+    height: 580px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/food-g3280a72fe_1920.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.background-texts{
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.info{
+    background-color: #f2f2f2;
+    padding: 30px;
+}
+
+.nosotros{
+    margin-bottom: 20px;
+}
+
+.nosotros p{
+    line-height: 1.4;
+}
+
+.contacto{
+    margin-bottom: 30px;
+}
+
+.contacto h3 , .nosotros h3{
+    margin-bottom: 15px;
+}
+
+h3{
+    font-size: 1.5rem;
+}
+
+ul li{
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+li img{
+    width: 5%;
+    margin-right: 10px;
+}
+
+.contacto-email{
+    width: 6%;
+}
+
+.redes-sociales {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.redes-sociales a img{
+    width: 10%;
+    margin: 20px;
+}
+
+.google-maps{
+    text-align: center;
+    padding: 20px 0;
+}
+
+iframe{
+    width: 280px;
+    height: 300px;
+}
+
+/*FOOTER*/
+
+footer{
+    height: 60px;
+    background-color: rgb(21, 21, 21);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer span{
+    display: block;
+}
+
+.footer-large{
+    display: none;
+}
+
+footer p{
+    color: #fff;
+    font-size: 0.8rem;
+}
+
+/* MEDIA QUERIES*/
+
+
+@media screen and (min-width: 450px) {
+    html{
+        font-size: 17px;
+    }
+    .google-maps iframe{
+        width: 360px;
+        height: 300px;
+    }
+    .redes-sociales a img{
+        width: 8%;
+    }
+}
+
+@media screen and (min-width: 516px){
+    .google-maps iframe{
+        width: 400px;
+        height: 320px;
+    }
+    li img{
+        width: 3%;
+        margin-right: 10px;
+    }
+    
+    .contacto-email{
+        width: 3%;
+    }
+
+    .redes-sociales a img{
+        width: 8%;
+    }
+
+    footer p{
+        display: none;
+    }
+    .footer-large{
+        display: block;
+    }
+    
+    
+}
+
+@media screen and (min-width: 650px){
+    .google-maps iframe{
+        width: 500px;
+        height: 400px;
+    }
+    .redes-sociales a img{
+        width: 6%;
+    }
+    
+}
+
+@media screen and (min-width: 1140px){
+    html{
+        font-size: 18px;
+    }
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+    h1{
+        font-size: 5rem;
+    }
+    .background-texts h2{
+        font-size: 2rem;
+    }
+    .background-texts a{
+        position: relative;
+        top: 45px;
+        padding: 12px 20px;
+    }
+    .google-maps iframe{
+        width: 400px;
+        height: 250px;
+    }
+    li img{
+        width: 4%;
+        margin-right: 20px;
+    }
+    
+    .contacto-email{
+        width: 4%;
+    }
+    .seccion-background{
+        height: auto;
+    }
+    .redes-sociales a img{
+        width: 8%;
+    }
+}
+
